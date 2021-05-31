@@ -35,6 +35,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 .container-m{
     width: var(--container-m-width);
@@ -154,11 +155,11 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* overflow-x: hidden; */
 }
 .header_info{
     /* background: green; */
     margin-bottom: 1.5em;
+    width: 84%;
 }
 .header_info h1{
     font-size: 3em;
