@@ -8,6 +8,7 @@
     height: 300px;
     /* background-color: green; */
     transform: scale(.5);
+    display: none;
 }
 .column-r{
     position: relative;
