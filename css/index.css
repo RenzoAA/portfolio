@@ -46,8 +46,8 @@ body{
 
 .nav{
     width: var(--all-width);
-    background-color: #616161;
-    background-color: var(--bg-dark-gray);
+    /* background-color: #616161; */
+    /* background-color: var(--bg-dark-gray); */
     position: fixed;
     top: 0;
     left: 0;
@@ -63,7 +63,7 @@ body{
     align-items: center;
     height: 60px;
     position: relative;
-    background-color: var(--bg-dark-gray);
+    /* background-color: var(--bg-dark-gray); */
 }
 .info-nav{
     width:100%;
@@ -71,7 +71,7 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    background-color: var(--bg-dark-gray);
+    /* background-color: var(--bg-dark-gray); */
 }
 .logo{
     font-size: 1.6em;
@@ -114,6 +114,7 @@ body{
     margin-left: auto;
     background-color: #ffff;
     margin-right: auto;
+    border-radius: 12px;
     width: 90%;
     max-width: 450px;
     list-style: none;
@@ -148,16 +149,25 @@ body{
     color: #616161;
     font-size: 20px;
 }
-
-.header{
-    padding: 100px 0;
-    padding-top: 125px;
-    background: rgb(26, 26, 32);
-    background: url('../images/laptopred.jpg') no-repeat center center fixed;
+.header-bg{
+    width: 100%;
+    background: url('../images/codingbluemed.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.header-opacity{
+    width: 100%;
+    background-color: rgb(49, 44, 44,.5);
+    display: flex;
+    justify-content: center;
+}
+.header{
+    padding: 100px 0;
+    padding-top: 125px;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
@@ -246,7 +256,9 @@ body{
         flex-direction: row;
         justify-content: space-around;
         align-items: flex-start;
-        min-height: 100vh;
+        height: 100vh;
+        min-height: 600px;
+        max-height: 1000px;
     }
     .menu-btn{
         display: none;
